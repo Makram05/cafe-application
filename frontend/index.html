@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cafe Dashboard</title>
+    <title>Brew & Bean | Cafe Management Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
 </head>
 
 <body>
@@ -12,20 +14,20 @@
     <div class="main-container">
         <aside class="sidebar-container">
             <div class="cafe-deatils">
-                <img src="images/cafe-logo.svg" width="25" alt="Cafe Logo" class="cafe-logo">
+                <img src="images/logo-cafe.svg" width="25" alt="Cafe Logo" class="logo-cafe">
                 <h1 class="cafe-name">Brew & Bean</h1>
 
             </div>
             <div class="nav-links">
                 <h4>Navigation</h4>
-                <a href="index.html"><img src="images/dashboard.svg" width="17" alt="dashboard-log0"> Dashboard</a>
-                <a href="menu.html"><img src="images/menu-logo.svg" width="17" alt="menu-log0"> Menu</a>
-                <a href="kiosk.html"><img src="images/order-logo.svg" width="17" alt="order-logo"> Orders</a>
+                <a href="index.html"><img src="images/icon-dashboard.svg" width="17" alt="dashboard-log0"> Dashboard</a>
+                <a href="menu-items.html"><img src="images/icon-menu.svg" width="17" alt="menu-log0"> Menu</a>
+                <a href="kiosk.html"><img src="images/icon-order.svg" width="17" alt="order-logo"> Orders</a>
 
             </div>
 
             <div class="staff-info">
-                <img src="images/person-logo.svg" width="20" alt="person-logo" class="person-logo">
+                <img src="images/icon-user.svg" width="20" alt="person-logo" class="person-logo">
                 <div class="description">
                     <h3>Cafe Staff</h3>
                     <p>Manage your cafe operations</p>
@@ -38,7 +40,7 @@
 
             <section>
                 <div class="dashboard-header">
-                    <img src="images/cafe-logo.svg" width="25" alt="Cafe Logo" class="cafe-logo">
+                    <img src="images/logo-cafe.svg" width="25" alt="Cafe Logo" class="cafe-logo">
                     <div class="date-wish">
                         <h1 class="wish"> !</h1>
                         <p class="date"></p><span>&nbsp;&nbsp;• Here's what's happening at your cafe</span>
@@ -52,28 +54,28 @@
                         <p class="heading">Today's Orders</p>
                         <div class="number">
                             <p>0</p>
-                            <img class="order-bag" src="images/today-order.svg" width="30" alt="bag">
+                            <img class="order-bag" src="images/icon-bag.svg" width="30" alt="bag">
                         </div>
                     </div>
                     <div class="active-orders card">
                         <p class="heading">Active Orders</p>
                         <div class="number">
                             <p>0</p>
-                            <img class="active-clock" src="images/active-orders.svg" width="30" alt="clock">
+                            <img class="active-clock" src="images/icon-clock.svg" width="30" alt="clock">
                         </div>
                     </div>
                     <div class="today-revenue card">
                         <p class="heading">Today's Revenue</p>
                         <div class="number">
                             <span style="display:flex; gap:2px; color: rgb(120, 53, 15)">₹<p>0</p></span>
-                            <img class="revenue" src="images/today-revenue.svg" width="30" alt="wallet">
+                            <img class="revenue" src="images/icon-money.svg" width="30" alt="wallet">
                         </div>
                     </div>
                     <div class="count-menu card">
                         <p class="heading">Menu Items</p>
                         <div class="number">
                             <p>0</p>
-                            <img class="menu" src="images/menu-items.svg" width="30" alt="food">
+                            <img class="menu" src="images/icon-food.svg" width="30" alt="food">
                         </div>
                     </div>
                 </div>
@@ -83,13 +85,13 @@
                 <div class="box orders-list">
                     <h2>Active Orders</h2>
                     <div class="order-info">
-                        <img src="images/active-orders.svg" width="40" alt="active-orders">
+                        <img src="images/icon-clock.svg" width="40" alt="active-orders">
                         <p id="active-msg">No active orders right now</p>
                         <p>Orders will appear here when customers place them</p>
                     </div>
                 </div>
                 <div class="box popular-list">
-                    <h2>Popular Today</h2>
+                    <h2>Best Selling Today</h2>
 
                     <ol id="best-sale">
                         <p id="popular-msg">No orders placed yet</p>
