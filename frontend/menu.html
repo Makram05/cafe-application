@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Management</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="menu-header">
+        <div class="menu-header-info">
+            <h1>Menu Management</h1>
+            <p>Manage your cafe's delicious offerings</p>
+        </div>
+        <button class="btn-add-item" id="btnAddItem">+ &nbsp;&nbsp; Add New Item</button>
+    </header>
+
+    <!-- Menu Navigation -->
+    <nav class="menu-nav">
+        <button class="btn-category active" data-category="all">All</button>
+        <button class="btn-category" data-category="breakfast">Breakfast</button>
+        <button class="btn-category" data-category="lunch">Lunch</button>
+        <button class="btn-category" data-category="beverages">Beverages</button>
+        <button class="btn-category" data-category="fast-food">Fast Food</button>
+        <button class="btn-category" data-category="desserts">Desserts</button>
+        <button class="btn-category" data-category="tea">Tea</button>
+        <button class="btn-category" data-category="ice-cream">Ice Creams</button>
+    </nav>
+
+    <!-- Menu Items Container -->
+    <div class="menu-items" id="menuItemsContainer">
+        <!-- Items will be added here dynamically -->
+    </div>
+
+    <!-- Add Menu Item Form -->
+    <div class="menu-form-popup" id="menuFormPopup">
+        <h2>Add New Menu Item</h2>
+        <input type="text" id="menuItemName" placeholder="Item Name" required>
+        <input type="number" id="menuItemPrice" placeholder="Price" required>
+        
+        <label for="menuItemCategory">Category</label>
+        <select id="menuItemCategory" required>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="beverages">Beverages</option>
+            <option value="fast-food">Fast Food</option>
+            <option value="desserts">Desserts</option>
+            <option value="tea">Tea</option>
+            <option value="ice-cream">Ice Creams</option>
+        </select>
+
+        <input type="number" id="menuItemPrepTime" placeholder="Prep Time (minutes)" required>
+        <textarea id="menuItemDesc" placeholder="Description"></textarea>
+        <input type="text" id="menuItemImageUrl" placeholder="Image URL">
+
+        <div class="form-actions">
+            <button class="btn" id="btnSaveItem">Add</button>
+            <button class="btn btn-cancel" id="btnCancelItem">Cancel</button>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+
+</body>
+
+</html>
