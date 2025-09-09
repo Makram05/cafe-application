@@ -120,36 +120,36 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 6px;
 }
 
 .card-title h3 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color:rgb(120, 53, 15);
   margin: 0;
 }
 
 .card-title .price {
   font-size: 16px;
   font-weight: bold;
-  color: #5a3e1b; /* coffee brown */
+  color: rgb(120, 53, 15); /* coffee brown */
 }
 
 .category-badge {
   display: inline-block;
-  background: #f9e6c5;
-  color: #5a3e1b;
-  font-size: 12px;
+  background: #f0c987;
+  color: rgb(120, 53, 15);
+  font-size: 10px;
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 12px;
   margin-bottom: 6px;
+  
 }
 
 .card-desc {
   font-size: 14px;
-  color: #444;
+  color: #ff9800;
   margin: 6px 0;
 }
 
@@ -157,7 +157,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 13px;
-  color: #666;
+  color: #ff9800;
 }
 
 .card-footer img {
@@ -175,7 +175,7 @@ body {
   border: none;
   border-radius: 6px;
   background: #f0c987;
-  color: #333;
+  color: rgb(120, 53, 15);
   cursor: pointer;
   transition: background 0.2s;
 }
